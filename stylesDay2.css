@@ -6,15 +6,16 @@
     border-width: 5px;
     padding: 12px;
     border-radius: 8px;
+    text-align: center
 }
 
 .number {
     background-color: rgb(14 14 14);
     display: inline-block;
-    width: 12.1%;
-    min-height: 44px;
+    width: 40px;
+    min-height: 34px;
     text-align: center;
-    padding-top: 32px;
+    padding-top: 22px;
     font-size: larger;
     font-weight: bold;
     border-style: solid;
@@ -40,12 +41,16 @@ h1 {
     font-weight: bold;
 }
 
-.body.button-container {
-    color: goldenrod;
-    border-color: red;
+#button-container input {
+    color: black;
     font-weight: bold;
     border-width: 5px;
     background-color: green;
     text-align: center;
     margin: auto;
+}
+
+#button-container {
+    padding-top: 20px;
+    text-align: center;
 }
