@@ -13,6 +13,18 @@ const numberCreator = function() {
     }
 }
 const buttonClick = function() {
-    let randomNumber = Math.floor((Math.random() * 76) + 1)
-
+    randomNumber = Math.floor((Math.random() * 76) + 1)
+    randomClick = document.getElementsByClassName('number')
+    if (randomClick[randomNumber - 1].style.backgroundColor !== 'red') {
+        randomClick[randomNumber - 1].style.backgroundColor = 'red'
+        divChild = document.createElement('p')
+        buttonContainer = document.getElementById('button-container')
+        buttonContainer.appendChild(divChild)
+        document.getElementsByTagName('p')[0].innerHTML = randomNumber
+    } else {
+        divChild = document.createElement('p')
+        buttonContainer = document.getElementById('button-container')
+        buttonContainer.appendChild(divChild)
+        document.getElementsByTagName('p')[0].innerHTML = `number ${randomNumber} already randomized click again!`
+    }
 }
